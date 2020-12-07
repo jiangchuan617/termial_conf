@@ -102,5 +102,6 @@ conda activate ***
 conda install ipython
 conda install jupyter
 conda install autopep8
+conda install nb_conda_kernels
 ```
 
