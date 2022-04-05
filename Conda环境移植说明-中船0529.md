@@ -1,6 +1,6 @@
 # conda环境U盘移植说明
 
-## 步骤一：清华服务器移植到U盘
+## 步骤一：ts服务器移植到U盘
 
 1. 将base环境克隆一份，比如克隆成zc_test
 
@@ -19,7 +19,7 @@
    scp -r zcqz@166.111.73.48:anaconda3/envs/zc_test ./
    ```
    
-3. 将清华服务器上的anaconda3/pkgs文件拷贝到U盘
+3. 将ts服务器上的anaconda3/pkgs文件拷贝到U盘
 
    ```shell
    # 在U盘路径下
@@ -28,9 +28,9 @@
 
    
 
-## 步骤二：从U盘拷贝到中船服务器上
+## 步骤二：从U盘拷贝到zc服务器上
 
-1. 首先将中船服务器中的pkgs文件夹备份，并删除pkgs文件夹
+1. 首先将zc服务器中的pkgs文件夹备份，并删除pkgs文件夹
 
    ```shell
    cp -r anaconda3/pkgs anaconda3/pkgs_bak
@@ -40,12 +40,12 @@
 
    
 
-1. 将数据从U盘上拷贝到中船的anacnda/envs目录下
+1. 将数据从U盘上拷贝到zc的anacnda/envs目录下
 
    ```shell
    # 进入U盘路径
    cd linux下/U盘路径
-   # 将pkgs文件拷贝至中船服务器上的anaconda3文件夹内
+   # 将pkgs文件拷贝至zc服务器上的anaconda3文件夹内
    cp -r pkgs ~/anaconda3/
    conda create -n zc_test --clone ./zc_test --offline
    
