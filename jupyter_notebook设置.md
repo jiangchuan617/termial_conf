@@ -40,7 +40,9 @@ InteractiveShell.ast_node_interactivity = "last_expr_or_assign"
 
 ```
 touch ~/.ipython/profile_default/ipython_config.py
+
 open ~/.ipython/profile_default/ipython_config.py
+vi ~/.ipython/profile_default/ipython_config.py
 ```
 
 将下面的代码复制进去，重启jupyter notebook 
