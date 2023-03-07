@@ -1,3 +1,5 @@
+
+
 # zsh的安装
 
 ```shell
@@ -12,6 +14,17 @@ echo $SHELL
 ```
 
 # conda配置
+
+在 .zshrc最后加上 
+
+```shell
+# 使conda 生效
+source .bash_profile 
+#  进入虚拟环境
+conda activate t
+```
+
+
 
 ## 代码补全(不建议)
 
@@ -55,5 +68,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ```
 plugins=( [plugins...] zsh-syntax-highlighting)
+```
+
+直接复制
+
+```
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 ```
 
